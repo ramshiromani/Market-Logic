@@ -1,0 +1,34 @@
+/*
+ * This class will Encode an English text with the given offset.
+ * If the offset is 1 then all 'a' letters are replaced with 'b', 'b' with 'c', etc.
+ * If the offset is -1 then all 'a' letters are replaced with 'z', 'b' with 'a', etc.
+ */
+public class OffsetEncoding {
+
+	public static String encode(int offset, String original) {
+		StringBuilder result = new StringBuilder();
+
+	      if(offset<0)
+
+	        offset=26+offset;
+
+	      for(int i=0;i<original.length();i++){
+             System.out.println('a'+(original.charAt(i)-'a'+offset));
+             System.out.println((original.charAt(i)-'a'+offset)%26);
+             System.out.println(('a'+(original.charAt(i)-'a'+offset)%26));
+             System.out.println((char)('a'+(original.charAt(i)-'a'+offset)%26));
+	         result.append((char)('a'+(original.charAt(i)-'a'+offset)%26));
+
+	         
+
+	      }
+
+	      return result.toString();
+		}
+	public static void main(String[] args) {
+		System.out.println(encode(1,"z"));
+		//System.out.println(encode(-1,"test"));
+
+	}
+
+}

@@ -1,0 +1,16 @@
+/*
+ * This class will Encode an English text with the given offset.
+ * If the offset is 1 then all 'a' letters are replaced with 'b', 'b' with 'c', etc.
+ * If the offset is -1 then all 'a' letters are replaced with 'z', 'b' with 'a', etc.
+ */
+public class OffsetEncoding {
+
+	public static String encode(int offset, String original) {
+		
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
